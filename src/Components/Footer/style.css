@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.footer-container {
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: dimgray;
+    color: white;
+    padding: 20px;
+}
+
+.footer-container p {
+    text-align: center;
+}
+
+.copyright {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 70%;
+    color: white;
+}

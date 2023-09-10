@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: cursive; */
+}
+
+.education-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+h3 {
+    width: 100vw;
+    text-align: left;
+    padding-left: 5%;
+    margin: 3% 0;
+    color: black;
+}
+
+.e-card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: #a893f6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    margin: 20px;
+    border: 2px solid white;
+}
+
+.e-card:hover {
+    transform: rotate(-5deg) scale(1.1);
+    box-shadow: -10px 10px 15px rgb(1, 49, 182);
+}
+
+.e-card__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.e-card:hover .e-card__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+}
+
+.e-card__title {
+    margin: 0;
+    color: white;
+    background: linear-gradient(-45deg, #e14c8f 0%, #e0a45b 100%);
+    font-weight: 700;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+
+.e-card__description {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.g-title {
+    background: transparent;
+    color: white;
+}
+
+.e-card:hover svg {
+    scale: 0;
+    transform: rotate(-45deg);
+}
+
+.date,
+.percentage {
+    font-size: 10px;
+}
